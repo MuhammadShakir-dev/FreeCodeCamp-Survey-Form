@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey From</title>
+    <!--Google Fonts Link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@400;500;600;700&family=Bebas+Neue&family=Comfortaa:wght@300;400;500&family=Inconsolata:wght@200;400;600;700;800;900&family=Merriweather:wght@300;400;700&family=Nunito:wght@200;300;400;500;600&family=Open+Sans:wght@300;500;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,200&family=Raleway:wght@100;200;300;400;500;600;700&family=Roboto+Condensed:wght@300;400;700&family=Roboto+Mono:wght@100;200;300;400;500;600&family=Roboto:wght@100;300;400;500;700&family=Source+Code+Pro:wght@200;300;400;500;600;700;800&family=Source+Sans+Pro:ital,wght@0,200;0,300;1,400&family=Titillium+Web:wght@200;300;400;600;700;900&family=Ubuntu:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            padding: 0%;
+            margin: 0%;
+            background-image: url(https://shots.codepen.io/leen624/pen/mdLjbbz-512.jpg?version=1664907060);
+            background-size: cover;
+            font-family: 'Anton', sans-serif;
+            font-family: 'Barlow Condensed', sans-serif;
+            font-family: 'Bebas Neue', cursive;
+            font-family: 'Comfortaa', cursive;
+            font-family: 'Inconsolata', monospace;
+            font-family: 'Merriweather', serif;
+            font-family: 'Nunito', sans-serif;
+            font-family: 'Open Sans', sans-serif;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 0%;
+            color: white;
+            text-transform: lowercase;
+            font-weight: 500;
+        }
+
+        i {
+            text-align: center;
+            display: block;
+            color: lightgray;
+            font-size: 18px;
+            margin-top: 10px;
+
+        }
+
+        .formcontainer{
+            width: 600px;
+            height: 600px;
+            background-color:rgba(21, 0, 103,0.7);
+            margin: 30px auto 0px auto;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+            backdrop-filter: blur(5px);
+            padding-top:40px ;
+            padding-bottom: 20px;
+        }
+        label{
+            display: block;
+            margin: 5px 0px 5px 40px;
+            color: white;
+            font-size: 19px;
+        }
+        label span{
+            font-size: 15px;
+        }
+        input{
+            display: block;
+            width:500px;
+            margin: 5px auto 30px auto  ;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        select{
+            width:510px; 
+            display: block;
+            margin: 5px auto 30px auto  ;
+            padding: 10px 10px;
+            color: black;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        ::placeholder{
+            font-size: 16px;
+            color: grey;
+        }
+
+        #opt1{
+            margin: 0%;
+            display: inline;
+        }
+
+        button{
+            width: 400px;
+            height: 40px;
+            margin: 50px auto 20px auto;
+            display: block;
+            border-radius: 5px;
+            outline: none;
+            cursor: pointer;
+            transition: all 0.5s ease;
+        }
+        button:hover{
+            background-color: darkblue;
+            color:white;
+            outline: none;
+            border: none;
+            box-shadow: rgba(136, 136, 136, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(131, 131, 131, 0.35) 0px -2px 6px 0px inset;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>FreeCodeCamp Survey Form</h1>
+    <i>Thank you for taking the time to help us improve the platform</i>
+        <div class="formcontainer">
+            <form action="#submit">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+                <label for="age">Age <span>(optional)</span></label>
+                <input type="text" id="age" placeholder="Enter your age">
+                <label for="role">Which option best describes your current role?</label>
+                <select id="role">
+                    <option value="select" selected>Select</option>
+                    <option value="Student">Student</option>
+                    <option value="Full time job">Full time job</option>
+                    <option value="Part time job"> Part time job</option>
+                </select>
+
+                <label for="feature">What is your favorite feature of freeCodeCamp?</label>
+                <select name="feature" id="feature">
+                    <option value="select" selected>Select</option>
+                    <option value="Challenges">Challenges</option>
+                    <option value="Projects">Projects</option>
+                    <option value="Opensource">Opensource</option>
+                </select>
+
+                <button>Submit</button>
+            </form>
+        </div>
+</body>
+
+</html>
